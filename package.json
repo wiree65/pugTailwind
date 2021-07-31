@@ -1,31 +1,20 @@
 {
   "name": "pugtailwind",
   "version": "1.0.0",
-  "description": "pugTailwind",
-  "main": "server.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "jade": "^1.11.0",
-    "pug": "^3.0.2",
-    "pug-lexer": "^5.0.1"
-  },
-  "devDependencies": {
-    "tailwindcss": "^2.2.7"
-  },
+  "description": "practice pug and tailwind",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build:css": "postcss public/stylesheets/tailwind.css -o views/style.css",
     "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wiree65/pugTailwind.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wiree65/pugTailwind/issues"
-  },
-  "homepage": "https://github.com/wiree65/pugTailwind#readme"
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "express": "^4.17.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.1.0",
+    "pug": "^3.0.2",
+    "tailwindcss": "^2.2.7"
+  }
 }

@@ -1,5 +1,31 @@
+
 doctype html
-html(lang="en")
-  link(href="/style.css", rel="stylesheet")
-  body
-    h1 hello
+<meta name="viewport" content="width=device-width, initial-scale=1">
+link(href="./styles/style.css" rel="stylesheet")
+.h-screen.w-screen 
+  header.header
+    a.logo(href="")
+      img(src="./images/leb2.png" width="70%")
+    input.menu-btn(type="checkbox" id="menu-btn")
+    label(class="menu-icon" for="menu-btn")
+      span.navicon
+    ul.menu.flex.justify-center.grid.grid.rows-1.text-center.font-medium(class="md:grid-cols-5")
+      li
+        a(href="work") Home
+      li
+        a(href="work") What is LEB2
+      li
+        a(href="work") Support
+
+      li  
+        a(href="work") New Features
+      li
+        button(href="work" class="lg:bg-leb lg:text-white h-3/4 w-3/5 rounded-md").text-leb Login
+
+  .flex.justify-center.px-5(class="py-32")
+    video(src='./images/welcometoLeb.mp4' autoplay muted) 
+
+
+
+
+
