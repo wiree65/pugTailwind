@@ -1,7 +1,11 @@
-
-doctype html
-<meta name="viewport" content="width=device-width, initial-scale=1">
+meta(name="viewport" content="width=device-width, initial-scale=1")
 link(href="./styles/style.css" rel="stylesheet")
+head
+  title LEB2
+  <script>
+    | console.log('test')
+    - const lesson=['creating Your Class','Class Planning','Performance Feedback and Assessment','Tools']
+  </script>
 .h-screen.w-screen 
   header.header
     a.logo(href="")
@@ -49,9 +53,8 @@ link(href="./styles/style.css" rel="stylesheet")
       a(href='#').mt-5
         p.font-medium Online Lesson
   .grid.justify-center
-    button(href="work" class="bg-purple-700 lg:text-white rounded-md h-14 w-36").text-white See More
-
-
-
-
+    button(href="work" class="bg-purple-700 lg:text-white rounded-md h-11  w-36 md:h-12 ").text-white See More
+  .grid.grid-cols-2.justify-center.content-center.px-5.py-5(class="lg:grid-cols-4")
+    each val in lesson
+      li= val
 
