@@ -31,7 +31,7 @@ head
   .grid.justify-center.grids-rows-1.text-center
     .p.font-bold.text-xl.text-purple-700 LEB2 Fast Track Tutorial
     .p.font-medium (for Student)
-  .grid.grid-cols-2.justify-center.content-center.px-5.py-5(class="lg:grid-cols-4")
+  .grid.grid-cols-2.justify-center.content-center.px-5.py-10(class="lg:grid-cols-4")
     .div.text-center.mx-5
       a(href='#').mx-5
         img(src='./images/preview.jpg' class="rounded-md")
@@ -53,8 +53,40 @@ head
       a(href='#').mt-5
         p.font-medium Online Lesson
   .grid.justify-center
-    button(href="work" class="bg-purple-700 lg:text-white rounded-md h-11  w-36 md:h-12 ").text-white See More
+    button(href="work" class="bg-purple-700 lg:text-white rounded-md h-11  w-36 md:h-12 mt-5 ").text-white See More
+  .grid.justify-center.grids-rows-1.text-center.my-10
+    .p.font-bold.text-xl.text-purple-700 LEB2 Fast Track Tutorial
+    .p.font-medium (for Student)
   .grid.grid-cols-2.justify-center.content-center.px-5.py-5(class="lg:grid-cols-4")
     each val in lesson
-      li= val
+      .div.text-center.mx-5
+        a(href='#').mx-5
+          img(src='./images/te.png' class="rounded-md")
+        a(href='#').mt-5
+        p.font-medium.mt-5= val
+  .grid.justify-center
+    button(href="work" class="bg-purple-700 lg:text-white rounded-md h-11  w-36 md:h-12 my-5 ").text-white See More
+  .bg-gray-800.mt-10(class="grid justify-center")
+    .pt-5.mx-10(class="h-3/4  md:grid-cols-3 md:grid md:justify-center")
+      a.logo(href="")
+        img(src="./images/leb2w.png" class="w-5/12 md:w-3/5")
+      .grid.grid-rows-4.text-left.my-5
+        a.text-white.text.text-2xl.font-bold(class="md:text-3xl") Support
+        a.text-white Video Tutorial for Teacher
+        a.text-white Video Tutorial for Student
+        a.text-white Documentation
+      .grid.grid-rows-5.text-left
+        a.text-white.text.text-2xl.font-bold(class="md:text-3xl") Contact
+        a.text-white About us
+        a.text-white Facebook : kmuttlearning
+        a.text-white Email : leb2@mail.kmutt.ac.th
+        a.text-white Location : CB4, 8th floor, KMUTT
+    .divide-y.divide-gray-500.mt-5(class="w-full")
+      div 
+      div
+    .grid.grid-cols-3.justify-center.content-center.py-5.mx-5
+      p.text-white © 2018 All Right Reserved
+      div
+      a.logo(href="").flex.justify-end
+        img(src="./images/badge.png" class="w-2/3 md:w-2/5")
 
